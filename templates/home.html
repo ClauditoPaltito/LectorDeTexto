@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<form>
+    <div class="form-group">
+        <label for="hablar">¡Escriba aquí lo que quiere escuchar!</label>
+        <input type="text" id="texto" placeholder="Hola mundo">
+        <input type="button" id="hablar" value="Leer">
+    </div>
+    
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Seleccione el tipo de archivo a subir</label>
+        <select class="form-select" id="exampleFormControlSelect1">
+            <option>Selecciones un tipo de archivo</option>
+            <option>docx</option>
+            <option>pdf</option>
+            <option>txt</option>
+    
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="file" id="exampleFormControlFile1">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+</form>
+
+<audio src="uno.mp3" controls="controls" type="audio/mpeg" preload="preload">
+</audio>
+
+
+{% endblock %}
